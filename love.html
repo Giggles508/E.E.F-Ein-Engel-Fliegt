@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E.E.F. – Ein Engel fliegt</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Georgia", serif;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.7;
+    }
+
+    header {
+      background-color: #f3e9ec;
+      text-align: center;
+      padding: 60px 20px;
+      border-bottom: 1px solid #e2d2d6;
+    }
+
+    header h1 {
+      font-size: 2.4em;
+      margin: 0;
+      color: #5c4a4a;
+    }
+
+    header p {
+      font-size: 1.2em;
+      color: #7a6666;
+      margin-top: 10px;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    h2 {
+      color: #5c4a4a;
+      margin-bottom: 20px;
+      font-size: 1.8em;
+    }
+
+    .widmung, .ueber, .hoffnung, .sprueche {
+      background-color: #ffffff;
+      border: 1px solid #e8e8e8;
+      border-radius: 8px;
+      padding: 40px 30px;
+      margin-bottom: 60px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    .eef {
+      font-style: italic;
+      color: #7a6666;
+      margin-top: 25px;
+    }
+
+    .sprueche h3 {
+      color: #5c4a4a;
+      margin-bottom: 40px;
+      font-size: 1.6em;
+    }
+
+    .spruch {
+      max-width: 700px;
+      margin: 0 auto 20px auto;
+      padding: 20px;
+      font-style: italic;
+      color: #555;
+      background-color: #fdfcfc;
+      border-left: 4px solid #d8b7be;
+      border-radius: 4px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 10px;
+      color: #777;
+      font-size: 0.9em;
+      border-top: 1px solid #e2d2d6;
+      margin-top: 60px;
+    }
+
+    .lang-select {
+      margin: 20px;
+      text-align: center;
+    }
+
+    .lang-select button {
+      padding: 8px 16px;
+      margin: 0 5px;
+      border: 1px solid #ccc;
+      background-color: #f3e9ec;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    .lang-select button.active {
+      background-color: #d8b7be;
+      color: white;
+      border-color: #d8b7be;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 data-de="E.E.F. – Ein Engel fliegt" data-en="E.E.F. – An Angel Flies" data-nl="E.E.F. – Een Engel Vliegt">E.E.F. – Ein Engel fliegt</h1>
+    <p data-de="Gemeinsam trauern. Gemeinsam heilen." data-en="Mourning together. Healing together." data-nl="Samen rouwen. Samen helen.">Gemeinsam trauern. Gemeinsam heilen.</p>
+  </header>
+
+  <div class="lang-select">
+    <button onclick="setLanguage('de')" class="active">Deutsch</button>
+    <button onclick="setLanguage('en')">English</button>
+    <button onclick="setLanguage('nl')">Nederlands</button>
+  </div>
+
+  <main>
+    <section class="widmung">
+      <h2 data-de="Widmung" data-en="Dedication" data-nl="Wijding">Widmung</h2>
+      <p data-de="Diese Seite ist meiner geliebten Tante Eveline gewidmet." data-en="This page is dedicated to my beloved aunt Eveline." data-nl="Deze pagina is opgedragen aan mijn geliefde tante Eveline.">Diese Seite ist meiner geliebten Tante Eveline gewidmet.</p>
+      <p class="eef" data-de="E.E.F. – Ein Engel fliegt" data-en="E.E.F. – An Angel Flies" data-nl="E.E.F. – Een Engel Vliegt">E.E.F. – Ein Engel fliegt</p>
+    </section>
+
+    <section class="ueber">
+      <h2 data-de="Über mich" data-en="About me" data-nl="Over mij">Über mich</h2>
+      <p data-de="Hallo, ich bin Daniel Van Stijn. Diese Seite entstand aus meiner eigenen Trauer heraus – und aus dem Wunsch, anderen Mut zu machen."
+         data-en="Hello, I am Daniel Van Stijn. This page came from my own grief – and from the desire to give others courage."
+         data-nl="Hallo, ik ben Daniel Van Stijn. Deze pagina is ontstaan uit mijn eigen rouw – en uit het verlangen anderen moed te geven.">Hallo, ich bin [Dein Name]. Diese Seite entstand aus meiner eigenen Trauer heraus – und aus dem Wunsch, anderen Mut zu machen.</p>
+    </section>
+
+    <section class="hoffnung">
+      <h2 data-de="Es wird wieder besser 🌤️" data-en="It will get better 🌤️" data-nl="Het wordt weer beter 🌤️">Es wird wieder besser 🌤️</h2>
+      <p data-de="Manchmal ist das Leben ein Meer aus Abschieden. Doch jedes Lächeln, jede Erinnerung, jeder Sonnenstrahl erinnert uns daran: Das Gute bleibt."
+         data-en="Sometimes life is a sea of farewells. But every smile, every memory, every sunbeam reminds us: The good remains."
+         data-nl="Soms is het leven een zee van afscheid. Maar elke glimlach, elke herinnering, elke zonnestraal herinnert ons: Het goede blijft.">Manchmal ist das Leben ein Meer aus Abschieden. Doch jedes Lächeln, jede Erinnerung, jeder Sonnenstrahl erinnert uns daran: Das Gute bleibt.</p>
+    </section>
+
+    <section class="sprueche">
+      <h3 data-de="Worte, die das Herz wärmen" data-en="Words that warm the heart" data-nl="Woorden die het hart verwarmen">Worte, die das Herz wärmen</h3>
+      <div class="spruch" data-de="Trauer ist Liebe, die keinen Ort mehr findet – bis wir ihr einen schenken." data-en="Grief is love without a place – until we give it one." data-nl="Rouw is liefde zonder plek – totdat we er een geven.">Trauer ist Liebe, die keinen Ort mehr findet – bis wir ihr einen schenken.</div>
+      <div class="spruch" data-de="Selbst aus den Tränen wächst irgendwann eine Blume der Hoffnung." data-en="Even from tears, a flower of hope eventually grows." data-nl="Zelfs uit tranen groeit uiteindelijk een bloem van hoop.">Selbst aus den Tränen wächst irgendwann eine Blume der Hoffnung.</div>
+      <div class="spruch" data-de="Du bist nicht allein. Jemand denkt an dich – jetzt, in diesem Moment." data-en="You are not alone. Someone is thinking of you – right now." data-nl="Je bent niet alleen. Iemand denkt aan jou – op dit moment.">Du bist nicht allein. Jemand denkt an dich – jetzt, in diesem Moment.</div>
+      <div class="spruch" data-de="Ein Engel fliegt weiter – aber sein Flügelschlag bleibt in der Luft." data-en="An angel keeps flying – but its wingbeat stays in the air." data-nl="Een engel blijft vliegen – maar zijn vleugelslag blijft in de lucht.">Ein Engel fliegt weiter – aber sein Flügelschlag bleibt in der Luft.</div>
+      <div class="spruch" data-de="Es ist okay, zu weinen. Es ist okay, zu lachen. Beides gehört zur Heilung." data-en="It’s okay to cry. It’s okay to laugh. Both belong to healing." data-nl="Het is oké om te huilen. Het is oké om te lachen. Beide horen bij genezing.">Es ist okay, zu weinen. Es ist okay, zu lachen. Beides gehört zur Heilung.</div>
+      <div class="spruch" data-de="Liebe endet nie. Sie verändert nur ihre Form." data-en="Love never ends. It just changes its form." data-nl="Liefde eindigt nooit. Het verandert alleen van vorm.">Liebe endet nie. Sie verändert nur ihre Form.</div>
+      <div class="spruch" data-de="Jeder neue Tag bringt die Chance auf einen Neuanfang." data-en="Every new day brings the chance for a new beginning." data-nl="Elke nieuwe dag biedt de kans op een nieuw begin.">Jeder neue Tag bringt die Chance auf einen Neuanfang.</div>
+      <div class="spruch" data-de="Auch die dunkelste Nacht endet mit einem Sonnenaufgang." data-en="Even the darkest night ends with a sunrise." data-nl="Zelfs de donkerste nacht eindigt met een zonsopgang.">Auch die dunkelste Nacht endet mit einem Sonnenaufgang.</div>
+      <div class="spruch" data-de="Die Erinnerung an Liebe kann niemand nehmen." data-en="The memory of love cannot be taken away." data-nl="De herinnering aan liefde kan niemand afnemen.">Die Erinnerung an Liebe kann niemand nehmen.</div>
+      <div class="spruch" data-de="Kleine Schritte führen zu großer Heilung." data-en="Small steps lead to great healing." data-nl="Kleine stappen leiden tot grote genezing.">Kleine Schritte führen zu großer Heilung.</div>
+    </section>
+  </main>
+
+  <footer data-de="&copy; 2025 In liebevoller Erinnerung an Eveline | Erstellt mit Herz und Hoffnung"
+          data-en="&copy; 2025 In loving memory of Eveline | Created with heart and hope"
+          data-nl="&copy; 2025 Ter nagedachtenis aan Eveline | Gemaakt met hart en hoop">
+    &copy; 2025 In liebevoller Erinnerung an Eveline | Erstellt mit Herz und Hoffnung
+  </footer>
+
+  <script>
+    function setLanguage(lang) {
+      const elements = document.querySelectorAll('[data-de]');
+      elements.forEach(el => {
+        el.innerHTML = el.dataset[lang];
+      });
+
+      document.querySelectorAll('.lang-select button').forEach(btn => btn.classList.remove('active'));
+      document.querySelector(`.lang-select button[onclick="setLanguage('${lang}')"]`).classList.add('active');
+    }
+  </script>
+</body>
+</html>
